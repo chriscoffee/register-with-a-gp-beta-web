@@ -1,21 +1,23 @@
 // import all NHS.UK Frontend assets
-@import "nhsuk-frontend/dist/scss/nhsuk";
+@import "fonts/nhsuk-frutiger";
+@import "fonts/fonts";
+//@import "nhsuk-frontend/dist/scss/nhsuk";
 
 // components (eg. site search, navigation)
-@import "components/form-title";
-@import "components/form-label";
-@import "components/form-group";
-@import "components/form-textbox";
-@import "components/form-multiple-choice";
-@import "components/form-dropdown";
-@import "components/error-summary";
-@import "components/button";
-@import "components/summary";
-@import "components/panel";
+//@import "components/form-title";
+//@import "components/form-label";
+//@import "components/form-group";
+//@import "components/form-textbox";
+//@import "components/form-multiple-choice";
+//@import "components/form-dropdown";
+//@import "components/error-summary";
+//@import "components/button";
+//@import "components/summary";
+//@import "components/panel";
 
 // units (eg. tables, headings)
-@import "units/tables";
+//@import "units/tables";
 
-@import "objects/reading-width";
+//@import "objects/reading-width";
 
-@import "trumps/headings";
+//@import "trumps/headings";

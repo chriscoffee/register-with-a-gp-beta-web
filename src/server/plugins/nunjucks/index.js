@@ -123,6 +123,10 @@ exports.register = function(server, options, next) {
           context['CURRENT_PRACTICE'] = practice;
         }
       }
+//      console.log(options.environment);
+      if( process.env.FONT_CDN){
+        context['FONT_CDN_PATH'] = process.env.FONT_CDN;
+      }
 
       return context;
     },

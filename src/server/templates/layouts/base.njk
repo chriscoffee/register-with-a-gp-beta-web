@@ -1,6 +1,9 @@
 {% extends 'nhsuk-base.njk' %}
 {% block head_stylesheets %}
   <link rel="stylesheet" href="{{ cssBundle }}" media="screen" type="text/css">
+  {% if FONT_CDN_PATH != '/' -%}
+    <link href="{{ FONT_CDN_PATH }}" rel="dns-prefetch">
+  {% endif -%}
 {% endblock %}
 
 {% block body_footer %}
