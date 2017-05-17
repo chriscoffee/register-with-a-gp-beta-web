@@ -122,8 +122,14 @@ exports.register = function(server, options, next) {
           context['serviceTitle'] = `Register with ${practice.name}`;
           context['CURRENT_PRACTICE'] = practice;
         }
+        if (typeof process.env.LOCAL_FONTS !== 'undefined'){
+          context['fontCss'] = process.env.LOCAL_FONTS + 'frutiger.css';
+        }
+        else {
+          context['fontCss'] = '';        
+        }
       }
-
+      
       return context;
     },
   };
