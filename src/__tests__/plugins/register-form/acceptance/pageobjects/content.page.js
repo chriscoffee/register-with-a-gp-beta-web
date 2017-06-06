@@ -14,6 +14,11 @@ const contentPage = Object.create(page, {
       return browser.element('.local-header h1');
     },
   },
+  nextStep: {
+    value: () => {
+      return browser.submitForm('#current-step-form');
+    },
+  },
 
   /**
    * define or overwrite page methods

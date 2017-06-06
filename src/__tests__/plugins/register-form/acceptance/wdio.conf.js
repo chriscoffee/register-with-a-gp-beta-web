@@ -114,13 +114,18 @@ const wdioConfig = {
   // Sauce Labs platform configurator - a great tool to configure your capabilities:
   // https://docs.saucelabs.com/reference/platforms-configurator
   //
-  capabilities: [{
-    browserName: 'firefox',
-  }, {
-    browserName: 'chrome',
-  }, {
-    browserName: 'phantomjs',
-  }],
+  capabilities: [
+    // {
+    //   browserName: 'firefox',
+    // },
+    {
+      browserName: 'chrome',
+    }
+    // {
+    //   browserName: 'phantomjs',
+    //   'phantom.binary.path': 'the-path-goes-here'
+    // }
+  ],
   //
   // ===================
   // Test Configurations
