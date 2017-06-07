@@ -12,7 +12,7 @@ describe('a content page', () => {
   });
 
   it('Test all gp registration flow', () => {
-    $('#practice-list a').click();
+    $('a=Wallington Family Practice').click();
     $('a=Start').click();
 
     /*Do you know your NHS number?*/
