@@ -1,20 +1,22 @@
 import {summaryGetHandler} from '../../../server/plugins/register-form/steps/summary';
+jest.mock('common');
+import getlastCompletedStep from 'common';
 
 describe('gethandler', () =>{
   it('should give back a', () => {
     const mockGet = jest.fn();
     mockGet.mockReturnValueOnce({
-      state: {data: {name: 'dfdsfds'}}
+      state: {data: {name: 'a'}}
     });
     const gReply = {
       view: function(a,b){
-        return a + JSON.stringify(b.data);
+        return b.name;
       },
-      redirect: function(a,b){
-        return a+JSON.stringify(b.data);
-      }
     };
-    expect(summaryGetHandler(mockGet, gReply)).toBe('register-form/summary{}');
+    
+    console.log(getlastCompletedStep('sdsd'));
+//    summaryGetHandler(mockGet(), gReply);
+//    expect(summaryGetHandler(mockGet(), gReply)).toBe('a');
   });
 
 });
